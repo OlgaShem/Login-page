@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.container {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 16px 16px 40px;
+  border: 1px solid #C3C3C3;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 36px;
+}
+.input::-moz-placeholder {
+  color: #767676;
+}
+.input:-ms-input-placeholder {
+  color: #767676;
+}
+.input::placeholder {
+  color: #767676;
+}
+.input_login {
+  background: url(/src/img/icon-login.svg) no-repeat 4% 40%;
+}
+.input_login:focus {
+  background: url(/src/img/icon-login2.svg) no-repeat 4% 40%;
+}
+.input_pass {
+  background: url(/src/img/icon-password.svg) no-repeat 4% 40%;
+}
+.input_pass:focus {
+  background: url(/src/img/icon-password2.svg) no-repeat 4% 40%;
+}
+.input:focus {
+  border: 1px solid #1A4F8B;
+  outline: none;
+}
+.input:focus::-moz-placeholder {
+  color: #1A4F8B;
+}
+.input:focus:-ms-input-placeholder {
+  color: #1A4F8B;
+}
+.input:focus::placeholder {
+  color: #1A4F8B;
+}
+
+.poster-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.poster {
+  width: 80%;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #1A4F8B;
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+}
+.btn:hover {
+  background-color: #3280d9;
+}
+.btn_light-blue {
+  background-color: #385C8E;
+  width: 48%;
+  text-transform: none;
+  line-height: 16px;
+}
+.btn_light-blue:hover {
+  background-color: #2a4469;
+}
+.btn_red {
+  background-color: #F14436;
+  width: 48%;
+  text-transform: none;
+  line-height: 16px;
+}
+.btn_red:hover {
+  background-color: #e42010;
+}
+
+.btn-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.link {
+  color: #1A4F8B;
+  text-decoration: none;
+}
+
+.link-block {
+  text-align: right;
+  margin: 10px 0 50px;
+}
+
+.simple-text {
+  color: #B0B0B0;
+}
+
+.social-block {
+  text-align: center;
+  margin-top: 105px;
+}
+
+.text-block {
+  text-align: center;
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 90%;
+  }
+  .btn-block {
+    flex-direction: column;
+  }
+  .btn_light-blue {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn_red {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .link-block {
+    margin: 10px 0 30px;
+  }
+}/*# sourceMappingURL=main.css.map */

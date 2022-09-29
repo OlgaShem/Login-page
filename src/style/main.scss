@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import 'variables.scss';
+
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 18px;
+}
+.container {
+    max-width: 30%;
+    margin: 0 auto;
+}
+.title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 16px 16px 40px;
+    border: 1px solid $light-grey;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 36px;
+    &::placeholder {
+        color: $dark-grey;
+    }  
+    &_login {
+        background: url(/src/img/icon-login.svg) no-repeat 4% 40%;
+        &:focus {
+            background: url(/src/img/icon-login2.svg) no-repeat  4% 40%;
+        }
+    }
+    &_pass{
+        background: url(/src/img/icon-password.svg) no-repeat 4% 40%;
+        &:focus {
+            background: url(/src/img/icon-password2.svg) no-repeat 4% 40%;
+        }
+    }
+    &:focus {
+        border: 1px solid $blue;
+        outline:none;
+        &::placeholder { 
+            color: $blue;
+        }
+    }
+}  
+.poster-wrap {
+    display: flex;
+    justify-content: center;
+}
+.poster {
+    width: 80%;
+}
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: $blue;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    &:hover {
+        background-color: lighten($blue,20%);;
+    }
+    &_light-blue {
+        background-color: $light-blue;
+        width: 48%;
+        text-transform: none;
+        line-height: 16px;
+        &:hover {
+            background-color: darken($light-blue,10%);;
+        }
+    }
+    &_red {
+        background-color: $red;
+        width: 48%;
+        text-transform: none;
+        line-height: 16px;
+        &:hover {
+            background-color: darken($red,10%);;
+        }
+    }
+}
+.btn-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+.link {
+    color: $blue;
+    text-decoration: none;
+}
+.link-block {
+    text-align: right;
+    margin: 10px 0 50px;
+}
+.simple-text {
+    color: $grey;
+}
+.social-block {
+    text-align: center;
+    margin-top: 105px;
+}
+.text-block {
+    text-align: center;
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: $tablet) { 
+    .container {
+        max-width: 70%;
+    }
+}
+@media only screen and (max-width: $mobile) { 
+    .container {
+        max-width: 90%;
+    }
+    .btn-block {
+        flex-direction: column;
+    }
+    .btn {
+        &_light-blue {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &_red {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (min-width: $desktop) { 
+    .link-block {
+       margin: 10px 0 30px;
+    }
+}
